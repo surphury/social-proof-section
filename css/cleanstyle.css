@@ -9,7 +9,6 @@
 }
 
 * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -46,19 +45,12 @@ img {
 }
 
 .rating, .testimonial {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .rating {
     font-weight: 700;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -81,14 +73,9 @@ img {
 }
 
 .card__info {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1.5em 1.5em;
-    -ms-grid-columns: 45px 1em 1fr;
     grid-template: 1.5em 1.5em / 45px 1fr;
     grid-auto-flow: column;
-    -webkit-column-gap: 1em;
-    -moz-column-gap: 1em;
     column-gap: 1em;
 }
 
@@ -98,8 +85,6 @@ img {
 }
 
 .card__client-img {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1 / 3;
     height: 100%;
     border-radius: 50%;
@@ -139,21 +124,14 @@ img {
         --bg-pattern-bottom: url(../images/bg-pattern-bottom-desktop.svg);
     }
     body {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         min-height: 100vh;
     }
     .main {
-        display: -ms-grid;
         display: grid;
-        -ms-grid-rows: 1fr 1fr;
-        -ms-grid-columns: 45% 5% 50%;
         grid-template: 1fr 1fr / 45% 50%;
         width: 75%;
         margin: auto;
-        -webkit-column-gap: 5%;
-        -moz-column-gap: 5%;
         column-gap: 5%;
     }
     .rating {
@@ -166,28 +144,17 @@ img {
         margin-right: 5%;
     }
     .testimonial {
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 2;
         grid-column: 1 / 3;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-column-gap: 1.5em;
-        -moz-column-gap: 1.5em;
         column-gap: 1.5em;
     }
     .rating__card:first-of-type, .testimonial__card:first-of-type {
-        -ms-flex-item-align: start;
         align-self: flex-start;
     }
     .rating__card:nth-of-type(2), .testimonial__card:nth-of-type(2) {
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     }
     .rating__card:nth-of-type(3), .testimonial__card:nth-of-type(3) {
-        -ms-flex-item-align: end;
         align-self: flex-end;
     }
 }

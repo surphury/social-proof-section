@@ -17,15 +17,20 @@ body {
     font-family: Spartan, sans-serif;
     background-image: var(--bg-pattern-top), var(--bg-pattern-bottom);
     background-repeat: no-repeat;
-    background-position: top, bottom right;
+    background-position: top left, bottom right;
 }
 
 img {
     max-width: 100%;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 .title {
     font-size: clamp(2rem, 2.3vw + 1rem, 3rem);
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -36,7 +41,6 @@ img {
 .subtitle {
     color: var(--dark-grayish-magenta);
     font-weight: 500;
-    line-height: 1.5em;
 }
 
 .testimonial {
@@ -69,7 +73,7 @@ img {
 
 .testimonial__card {
     background-color: var(--glommy-magenta);
-    padding: 2em 1.5em;
+    padding: 2.5vmax 2vmax;
 }
 
 .card__info {
@@ -97,6 +101,7 @@ img {
 
 .card__review {
     margin-bottom: 0;
+    opacity: .8;
 }
 
 @media only screen and (max-width:989px) {
@@ -132,7 +137,8 @@ img {
         grid-template: 1fr 1fr / 45% 50%;
         width: 75%;
         margin: auto;
-        column-gap: 5%;
+        gap: 4em 5%;
+        height: 80vh;
     }
     .rating {
         row-gap: 1em;
